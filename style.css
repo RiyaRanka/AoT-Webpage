@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: black;  
+}
+
+.slides {
+    display: none;
+}
+
+img {
+    vertical-align:text-top;
+}
+
+/* hi and p color */
+h1 {
+    color: #fff;
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 2px;
+    font-size: 55px;
+}
+
+p {
+    color: #fff;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Dai Banna SIL', serif;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* For images */
+.image-container {
+    width: 100%;
+    max-width: 110%;
+    height: 0%;
+    padding-bottom: 60%;
+    position: center;
+  }
+
+  .image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+/* Button color */
+.active {
+  background-color: #294023;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* AoT paragraph details */
+.about-aot {
+    text-align: left;
+    width: 50%;
+    height: 20%;
+    margin: 2px 25% 4% 25%;
+    line-height: 25px;
+}
+
+/* Titan image grid */
+.titan-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.titan-column {
+    flex: 20%;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+  }
+  
+  .titan-column img {
+    margin-top: 8px;
+    max-width: 75%;
+    max-height: 75%;
+    width: 100%;
+    padding: 20px 0px  10px 10px;
+    margin: 0px 50px 0px ;
+    
+  }
+
+  @media screen and (max-width: 800px) {
+    .titan-column {
+       flex: 50%;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .titan-column  {
+       flex: 100%;
+       max-width: 100%;
+    }
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 75px;
+    text-align: left;
+    margin: 20px 70px 20px;
+    letter-spacing: 2px;
+    font-size: 75px;
+}
+
+.about-titans {
+    text-align: left;
+    width: 75%;
+    height: 20%;
+    margin: 2px 2% 4% 80px;
+    line-height: 25px;
+}
+
+h3 {
+    color: #fff;
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 75px;
+    text-align: left;
+    margin: 20px 70px 20px;
+    letter-spacing: 2px;
+    font-size: 75px;
+}
