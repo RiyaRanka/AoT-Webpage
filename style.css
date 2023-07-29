@@ -1,33 +1,86 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  background-color: #294023;
+  padding: 1.5%;
+  font-size: 5%;
+}
+
+header h1 {
+  color: #fff;
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 0% 2% 5% 10%;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  display: inline;
+}
+
+nav li a:hover {
+  color: #d2c4ae;
 }
 
 body {
-    font-family: Verdana, sans-serif;
-    background-color: black;  
+  font-family: Verdana, sans-serif;
+  background-color: black;
 }
 
 .slides {
-    display: none;
+  display: none;
 }
 
 img {
-    vertical-align:text-top;
+  vertical-align: text-top;
 }
 
 /* hi and p color */
 h1 {
-    color: #fff;
-    font-family: 'Rubik Pixels', cursive;
-    font-size: 50px;
-    text-align: center;
-    margin: 20px;
-    letter-spacing: 2px;
-    font-size: 55px;
+  color: #fff;
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 2px;
+  font-size: 55px;
 }
 
 p {
-    color: #fff;
+  color: #fff;
 }
 
 /* Slideshow container */
@@ -46,7 +99,7 @@ p {
   bottom: 8px;
   width: 100%;
   text-align: center;
-  font-family: 'Dai Banna SIL', serif;
+  font-family: 'Dai Banna SIL', serif ;
 }
 
 /* Number text (1/5 etc) */
@@ -60,18 +113,18 @@ p {
 
 /* For images */
 .image-container {
-    width: 100%;
-    max-width: 110%;
-    height: 0%;
-    padding-bottom: 60%;
-    position: center;
-  }
+  width: 100%;
+  max-width: 110%;
+  height: 0%;
+  padding-bottom: 60%;
+  position: center;
+}
 
-  .image-container img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* The dots/bullets/indicators */
@@ -99,90 +152,170 @@ p {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px
+  }
 }
 
 /* AoT paragraph details */
-.about-aot {
-    text-align: left;
-    width: 50%;
-    height: 20%;
-    margin: 2px 25% 4% 25%;
-    line-height: 25px;
+#about-aot {
+  text-align: left;
+  width: 50%;
+  height: 20%;
+  margin: 2px 25% 4% 25%;
+  line-height: 25px;
 }
 
 /* Titan image grid */
-.titan-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+#titan-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0% 7% 0% 7%;
 }
 
-/* Create two equal columns that sits next to each other */
 .titan-column {
-    flex: 20%;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: center;
-  }
-  
-  .titan-column img {
-    margin-top: 8px;
-    max-width: 75%;
-    max-height: 75%;
-    width: 100%;
-    padding: 20px 0px  10px 10px;
-    margin: 0px 50px 0px ;
-    
-  }
+  width: 30%;
+  flex: 1;
+  position: relative;
+  justify-content: center;
+}
 
-  @media screen and (max-width: 800px) {
-    .titan-column {
-       flex: 50%;
-    }
- }
- @media screen and (max-width: 600px) {
-    .titan-column  {
-       flex: 100%;
-       max-width: 100%;
-    }
+.titan-column img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  padding: 40px 40px 10px 20px;
+  margin: 0;
+}
+
+/* Responsive adjustments for titan grid columns */
+@media screen and (max-width: 800px) {
+  .titan-column {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titan-column {
+    flex: 100%;
+  }
 }
 
 h2 {
-    color: #fff;
-    font-family: 'Rubik Pixels', cursive;
-    font-size: 75px;
-    text-align: left;
-    margin: 20px 70px 20px;
-    letter-spacing: 2px;
-    font-size: 75px;
+  color: #fff;
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 75px;
+  text-align: left;
+  margin: 20px 70px 0px 26%;
+  letter-spacing: 2px;
+  font-size: 75px;
+  flex-wrap: wrap;
 }
 
 .about-titans {
-    text-align: left;
-    width: 75%;
-    height: 20%;
-    margin: 2px 2% 4% 80px;
-    line-height: 25px;
+  text-align: left;
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 85%;
+  height: 20%;
+  font-size: 190%;
+  word-spacing: 4px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  margin: 0% 10% 6% 0%;
+  padding: 0% 5% 0% 23%;
 }
 
-h3 {
-    color: #fff;
-    font-family: 'Rubik Pixels', cursive;
-    font-size: 75px;
-    text-align: left;
-    margin: 20px 70px 20px;
-    letter-spacing: 2px;
-    font-size: 75px;
+/* AoT Characters */
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0% 0% 5% 5%;
+}
+
+.characters-content {
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  flex-basis: 45%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.characters-content h3 {
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 0;
+  margin-bottom: 2%;
+  letter-spacing: 3px;
+}
+
+.characters-content p {
+  font-family: Verdana, sans-serif;
+  margin-bottom: 0;
+  margin: 0% 10% 0% 0% ;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+.video {
+  flex-basis: 50%;
+}
+
+.video iframe {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #403535;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+
+#social-media {
+  margin-bottom: 10px;
+}
+
+#social-media a {
+  margin: 0 5px;
+}
+
+#social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.tatekae {
+  font-family: 'Rubik Pixels', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.reference {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
 }
